@@ -152,6 +152,10 @@ article {
 
 /* Table */
 
+.featured {
+    overflow-x: auto;
+}
+
 table {
     max-width: 100%;
 }
