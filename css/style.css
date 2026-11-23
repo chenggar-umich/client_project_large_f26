@@ -196,13 +196,6 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    .grid-container > :first-child {
-        grid-column: 1 / -1;
-        margin: 20px 20px;
-        padding: 10px;
-        border: none;
-    }
-
     section, aside {
         grid-column: span 5;
         margin: 20px 20px;
@@ -210,8 +203,30 @@ footer p {
         border: 5px double #2F65A7;
         border-radius: 12px;
     }
+
+    .grid-container .additional, .connect, .table-container {
+        grid-column: 1 / -1;
+        margin: 5px 20px 20px;
+        padding: 10px;
+    }
 }
 
 @media (min-width: 1024px) {
-    
+    section, aside {
+        grid-column: 2 / -2;
+        margin: 5px 0;
+        padding: 20px;
+        border: none;
+    }
+    .grid-container .additional, .connect, .table-container {
+        grid-column: 2 / -2;
+        margin: 5px 0;
+        padding: 20px;
+    }
+
+    section img {
+        border: 5px solid #2F65A7;
+        border-radius: 12px;
+        max-width: 50%;
+    }
 }
