@@ -199,6 +199,34 @@ footer p {
     padding: 18px 0;
 }
 
+/* 404 Page */
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    border: none;
+}
+
+.error > * {
+    margin: 3px;
+    padding: 3px;
+}
+
+.error > a {
+    color: #FFCB05;
+    background-color: #00274C;
+    border-radius: 12px;
+    padding: 10px 25px;
+}
+
+.error > a:hover {
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFCB05;
+}
+
 @media (min-width: 768px) {
     section, aside {
         grid-column: span 5;
